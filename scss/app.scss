@@ -1,7 +1,17 @@
 @import "_vars";
 @import "_template/mdl-template";
-@import "_palinger/_header/_md-header-style";
-@import "_palinger/_header/_overview";
-@import "_palinger/_header/_features";
-@import "_palinger/_header/_details";
-@import "_palinger/_header/_navigation";
+
+@import "_palinger/_base/_typography";
+
+@import "_palinger/_layout/_main";
+
+@import "_palinger/_layout/_header/_md-header-style";
+@import "_palinger/_layout/_header/_overview";
+@import "_palinger/_layout/_header/_features";
+@import "_palinger/_layout/_header/_details";
+@import "_palinger/_layout/_header/_navigation";
+@import "_palinger/_layout/_header/_overrides";
+
+@import "_palinger/_components/_profile-card";
+@import "_palinger/_components/_project-card";
+

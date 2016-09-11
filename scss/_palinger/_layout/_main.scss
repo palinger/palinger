@@ -1,0 +1,7 @@
+main {
+  &.mdl-layout__content {
+    padding: 0 $layout-padding;
+    max-width: $layout-max-width;
+    margin: 0 auto;
+  }
+}

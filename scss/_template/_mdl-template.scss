@@ -53,10 +53,6 @@ html, body {
   background-color: white;
   height: 4px;
 }
-.mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
-}
 .mdl-demo .mdl-card {
   height: auto;
   display: -webkit-box;
@@ -73,12 +69,10 @@ html, body {
   height: auto;
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text {
-  margin: 40px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 0;
   color: inherit;
   width: calc(100% - 80px);
 }
@@ -88,7 +82,6 @@ html, body {
 }
 .mdl-demo .mdl-card__actions {
   margin: 0;
-  padding: 4px 40px;
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
@@ -112,10 +105,7 @@ html, body {
 
 .mdl-demo .mdl-layout__content section:not(:last-of-type) {
   position: relative;
-  margin-bottom: 48px;
-}
-.mdl-demo section.section--center {
-  max-width: 860px;
+  margin-bottom: $layout-padding *2;
 }
 
 .mdl-demo section > header{
@@ -220,7 +210,7 @@ html, body {
 }
 .mdl-demo .toc {
   border-left: 4px solid #C1EEF4;
-  margin: 24px;
+  list-style-type: none;
   padding: 0;
   padding-left: 8px;
   display: -webkit-box;

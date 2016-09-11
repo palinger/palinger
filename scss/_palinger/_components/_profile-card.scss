@@ -1,0 +1,41 @@
+.profile-card {
+  background-color: $white;
+
+  header {
+    -webkit-align-items: flex-start!important;
+    align-items: flex-start!important;
+    min-height: 200px;
+    width: 100%;
+    -webkit-clip-path: circle(25% at 50% 33%);
+    clip-path: circle(25% at 50% 33%);
+    background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") center / cover;
+    img{
+
+    }
+  }
+
+  .mdl-card {
+    &__supporting-text {
+      padding: $layout-padding $layout-padding $layout-padding $layout-padding /2;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .profile-card {
+    header {
+      -webkit-clip-path: circle(100% at 50% 50%);
+      clip-path: circle(100% at 50% 50%);
+      background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") center / cover;
+      img{
+
+      }
+    }
+
+    .mdl-card {
+      &__supporting-text {
+        padding: $layout-padding;
+      }
+    }
+  }
+}

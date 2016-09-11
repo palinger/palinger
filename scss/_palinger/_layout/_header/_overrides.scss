@@ -1,0 +1,27 @@
+@media (min-width: 479px) and (max-width: 1024px){
+  .md-style-header {
+    &__icon {
+      display: none;
+    }
+  }
+  .mdl-layout__tab-bar-container {
+    transform: translateY(-75px);
+  }
+
+  .mdl-layout__tab-bar-container {
+    transform: translateY(-100px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mdl-layout__tab-bar {
+    &-container {
+      transform: translateY(-95px);
+    }
+  }
+
+  .mdl-layout__header {
+    height: 350px ;
+  }
+
+}

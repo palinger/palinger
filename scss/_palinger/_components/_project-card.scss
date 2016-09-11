@@ -1,0 +1,20 @@
+.mdl-grid {
+  .project-card {
+    width: auto;
+    margin: $layout-padding $layout-padding $layout-padding * 2;
+
+    .mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: url("http://www.designshock.com/wp-content/uploads/2015/02/sea.jpg") center / cover;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .mdl-grid {
+    .project-card {
+      margin: $layout-padding 0 $layout-padding * 2
+    }
+  }
+}

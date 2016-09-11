@@ -1,0 +1,52 @@
+h1, h2, h3, h4 {
+  line-height: $heading-line-height;
+}
+
+h1 {
+  font-size: $page-heading-size;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: $card-heading-size;
+  margin: 6px 0;
+}
+
+h3 {
+  font-size: $page-heading-size-small;
+  margin: 4px 0;
+}
+
+h4 {
+  font-size: $page-heading-size-x-small;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (min-width: 479px) and (max-width: 1024px){
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+*/

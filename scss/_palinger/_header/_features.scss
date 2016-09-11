@@ -1,0 +1,53 @@
+.features {
+  &.md-style-header {
+    background-image: url(../images/greyscale/features-bg.jpg);
+    animation-name: features-background-image;
+    animation-duration: $anim-duration;
+    background-position: 50% 33%;
+
+    &:before {
+      background-color: rgba($features-color, .5);
+    }
+  }
+  .md-style-header {
+    &__icon {
+      animation-name: features-icon-scaling;
+      animation-duration: $anim-duration/2;
+
+      &:before {
+        animation-name: features-background-bubble;
+        animation-duration: $anim-duration*2;
+        background-color: lighten($features-color, 20%);
+        box-shadow: 0 0 0 -25px lighten($features-color, 5%);
+      }
+
+      &:after{
+        content: "blur_on";
+      }
+    }
+  }
+
+  &.md-style-tabs {
+    &.mdl-color--primary-dark {
+      background-color: darken($features-color, 10%)!important;
+    }
+  }
+}
+
+@keyframes features-background-bubble {
+  0%   {box-shadow: 0 0 0  -25px darken($features-color, 5%)}
+  25%  {box-shadow: 0 0 0 1000px darken($features-color, 5%)}
+  100% {box-shadow: 0 0 0 1000px rgba(darken($features-color, 5%), 0)}
+}
+
+@keyframes features-background-image {
+  0%   {background-image: none;}
+  25%  {background-image: none}
+  100% {background-image: url(../images/greyscale/features-bg.jpg);}
+}
+
+@keyframes features-icon-scaling {
+  0%   {transform: scale(0)}
+  80% {transform: scale(1.2)}
+  100% {transform: scale(1)}
+}

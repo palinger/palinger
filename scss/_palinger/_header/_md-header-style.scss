@@ -1,0 +1,129 @@
+.mdl-layout__header-row {
+  height: $header-height-mobile/3;
+}
+
+.md-style-header {
+    background-size: cover;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    -webkit-transform-origin-x: initial;
+    -webkit-transform-origin-y: initial;
+    -webkit-transform-origin-z: initial;
+    overflow: hidden;
+    transition: background-position 10s ease-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__icon,
+  &__text{
+    text-align: center;
+    width: 100%;
+  }
+
+  &__icon {
+    position: relative;
+    transform: scale(1);
+    height: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: $icon-width-small;
+      height: $icon-width-small;
+      border-radius: 50%;
+      top: -55%;
+      left: 50%;
+      margin-left: -$icon-width-small/2;
+      z-index: -1;
+    }
+
+    &:after {
+      content: "";
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 30px;
+      line-height: $icon-width-small;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      top: -55%;
+      width: $icon-width-small;
+      height: $icon-width-small;
+      margin-left: -$icon-width-small/2;
+    }
+  }
+}
+
+.md-style-tabs {
+  transition: $anim-duration/2 background-color;
+}
+
+@media (min-width: 480px) {
+  .mdl-layout__header-row {
+    height: $header-height-tablet/3;
+  }
+
+  .md-style-header {
+    &__icon {
+      &:before {
+        width: $icon-width;
+        height: $icon-width;
+        margin-left: -$icon-width/2;
+        top: 0;
+      }
+      &:after {
+        content: "";
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 45px;
+        line-height: $icon-width;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        width: $icon-width;
+        height: $icon-width;
+        margin-left: -$icon-width/2;
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .mdl-layout__header-row {
+    height: $header-height-desktop/3;
+  }
+}
+
+@media (max-width: 479px) {
+  .mdl-layout__header {
+    height: 120px;
+  }
+  .mdl-demo .mdl-layout__tab-bar-container {
+    height: auto;
+  }
+  .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
+    height: auto;
+    line-height: 3;
+  }
+}

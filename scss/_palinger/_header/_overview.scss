@@ -1,0 +1,54 @@
+.overview {
+  &.md-style-header {
+    background-image: url(../images/greyscale/overview-bg.jpg);
+    animation-name: overview-background-image;
+    animation-duration: $anim-duration;
+    background-position: 50% 50%;
+
+    &:before {
+      background-color: rgba($overview-color, .5);
+    }
+  }
+
+  .md-style-header {
+    &__icon {
+      animation-name: overview-icon-scaling;
+      animation-duration: $anim-duration/2;
+
+      &:before {
+        animation-name: overview-background-bubble;
+        animation-duration: $anim-duration*2;
+        background-color: lighten($overview-color, 20%);
+        box-shadow: 0 0 0 -25px lighten($overview-color, 5%);
+      }
+
+      &:after{
+        content: "business_center";
+      }
+    }
+  }
+
+  &.md-style-tabs {
+    &.mdl-color--primary-dark {
+      background-color: darken($overview-color, 10%)!important;
+    }
+  }
+}
+
+@keyframes overview-background-bubble {
+  0%   {box-shadow: 0 0 0  -25px darken($overview-color, 5%)}
+  25%  {box-shadow: 0 0 0 1000px darken($overview-color, 5%)}
+  100% {box-shadow: 0 0 0 1000px rgba(darken($overview-color, 5%), 0)}
+}
+
+@keyframes overview-background-image {
+  0%   {background-image: none;}
+  25%  {background-image: none;}
+  100% {background-image: url(../images/greyscale/overview-bg.jpg);}
+}
+
+@keyframes overview-icon-scaling {
+  0%   {transform: scale(0)}
+  80% {transform: scale(1.2)}
+  100% {transform: scale(1)}
+}
